@@ -1,0 +1,182 @@
+:root {
+  --Blue: hsl(246, 80%, 60%);
+  --LightOrange: hsl(15, 100%, 70%);
+  --SoftBlue: hsl(195, 74%, 62%);
+  --LightRed: hsl(348, 100%, 68%);
+  --LimeGreen: hsl(145, 58%, 55%);
+  --Violet: hsl(264, 64%, 52%);
+  --SoftOrange: hsl(43, 84%, 65%);
+  /*  */
+  --VeryDarkBlue: hsl(226, 43%, 10%);
+  --DarkBlue: hsl(235, 46%, 20%);
+  --DesaturatedBlue: hsl(235, 45%, 61%);
+  --PaleBlue: hsl(236, 100%, 87%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  background-color: var(--VeryDarkBlue);
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+h4,
+p {
+  font-weight: 400;
+  color: var(--PaleBlue);
+}
+
+.info h2,
+h3 {
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 2.25rem;
+}
+
+.block h2 {
+  font-size: 1.3rem;
+}
+
+main {
+  margin: 30px;
+}
+
+.blocks .lower,
+.info .upper,
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lower,
+.info .upper {
+  padding: 30px;
+}
+
+.info,
+.block,
+.block .lower {
+  background-color: var(--DarkBlue);
+}
+
+.info,
+.block,
+.upper,
+.lower {
+  border-radius: 10px;
+}
+
+.info,
+.block {
+  margin-bottom: 30px;
+}
+
+.info .upper {
+  background-color: var(--Blue);
+  border-radius: inherit;
+}
+
+.profile {
+  width: 70px;
+  outline: 3px solid white;
+  outline-offset: -1px;
+  border-radius: 50%;
+}
+
+a {
+  color: var(--DesaturatedBlue);
+  text-decoration: none;
+}
+
+/* .block .upper {
+  z-index: 1;
+} */
+
+.block .upper img {
+  position: relative;
+  margin-left: auto;
+  z-index: 1;
+}
+
+.block .lower {
+  z-index: 10;
+  margin-top: -30px;
+}
+
+.dots {
+  margin-left: auto;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* Blocks color */
+
+.work .upper {
+  background-color: var(--LightOrange);
+}
+
+.play .upper {
+  background-color: var(--SoftBlue);
+}
+
+.study .upper {
+  background-color: var(--LightRed);
+}
+
+.exercise .upper {
+  background-color: var(--LimeGreen);
+}
+
+.social .upper {
+  background-color: var(--Violet);
+}
+
+.selfCare .upper {
+  background-color: var(--SoftOrange);
+}
+
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: hsl(227, 58%, 9%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--DarkBlue);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--Blue);
+}
