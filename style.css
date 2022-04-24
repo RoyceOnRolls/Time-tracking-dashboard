@@ -113,9 +113,9 @@ a {
   text-decoration: none;
 }
 
-/* .block .upper {
-  z-index: 1;
-} */
+a.active {
+  color: #fff;
+}
 
 .block .upper img {
   position: relative;

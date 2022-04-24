@@ -28,9 +28,9 @@
         </div>
         <div class="lower">
           <ul>
-            <li><a href="#">Daily</a></li>
-            <li><a href="#">Weekly</a></li>
-            <li><a href="#">Monthly</a></li>
+            <li><a class="daily" href="#">Daily</a></li>
+            <li><a class="weekly active" href="#">Weekly</a></li>
+            <li><a class="monthly" href="#">Monthly</a></li>
           </ul>
         </div>
       </section>
@@ -44,11 +44,14 @@
           <div class="lower">
             <div class="left">
               <h2>Work</h2>
-              <h3>32hrs</h3>
+              <h3><span class="currentAmount currentWork">32</span>hrs</h3>
             </div>
             <div class="right">
               <img class="dots" src="./images/icon-ellipsis.svg" alt="More" />
-              <p>Last Week - 36hrs</p>
+              <p>
+                Last <span class="period">Week</span> -
+                <span class="previousAmount previousWork">36</span>hrs
+              </p>
             </div>
           </div>
         </div>
@@ -60,11 +63,14 @@
           <div class="lower">
             <div class="left">
               <h2>Play</h2>
-              <h3>32hrs</h3>
+              <h3><span class="currentAmount currentPlay">32</span>hrs</h3>
             </div>
             <div class="right">
               <img class="dots" src="./images/icon-ellipsis.svg" alt="More" />
-              <p>Last Week - 36hrs</p>
+              <p>
+                Last <span class="period">Week</span> -
+                <span class="previousAmount previousPlay">36</span>hrs
+              </p>
             </div>
           </div>
         </div>
@@ -76,11 +82,14 @@
           <div class="lower">
             <div class="left">
               <h2>Study</h2>
-              <h3>32hrs</h3>
+              <h3><span class="currentAmount currentStudy">32</span>hrs</h3>
             </div>
             <div class="right">
               <img class="dots" src="./images/icon-ellipsis.svg" alt="More" />
-              <p>Last Week - 36hrs</p>
+              <p>
+                Last <span class="period">Week</span> -
+                <span class="previousAmount previousStudy">36</span>hrs
+              </p>
             </div>
           </div>
         </div>
@@ -92,11 +101,14 @@
           <div class="lower">
             <div class="left">
               <h2>Exercise</h2>
-              <h3>32hrs</h3>
+              <h3><span class="currentAmount currentExercise">32</span>hrs</h3>
             </div>
             <div class="right">
               <img class="dots" src="./images/icon-ellipsis.svg" alt="More" />
-              <p>Last Week - 36hrs</p>
+              <p>
+                Last <span class="period">Week</span> -
+                <span class="previousAmount previousExercise">36</span>hrs
+              </p>
             </div>
           </div>
         </div>
@@ -108,11 +120,14 @@
           <div class="lower">
             <div class="left">
               <h2>Social</h2>
-              <h3>32hrs</h3>
+              <h3><span class="currentAmount currentSocial">32</span>hrs</h3>
             </div>
             <div class="right">
               <img class="dots" src="./images/icon-ellipsis.svg" alt="More" />
-              <p>Last Week - 36hrs</p>
+              <p>
+                Last <span class="period">Week</span> -
+                <span class="previousAmount previousSocial">36</span>hrs
+              </p>
             </div>
           </div>
         </div>
@@ -124,15 +139,19 @@
           <div class="lower">
             <div class="left">
               <h2>Self Care</h2>
-              <h3>32hrs</h3>
+              <h3><span class="currentAmount currentSelfCare">32</span>hrs</h3>
             </div>
             <div class="right">
               <img class="dots" src="./images/icon-ellipsis.svg" alt="More" />
-              <p>Last Week - 36hrs</p>
+              <p>
+                Last <span class="period">Week</span> -
+                <span class="previousAmount previousSelfCare">36</span>hrs
+              </p>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>
