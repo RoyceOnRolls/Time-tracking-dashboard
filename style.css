@@ -196,15 +196,35 @@ a.active {
 @media screen and (min-width: 1000px) {
   main {
     max-width: 1200px;
+    width: 100%;
     display: flex;
-    border: #fff solid 5px;
     justify-content: center;
     gap: 30px;
   }
+  .info {
+    flex-basis: 25%;
+  }
   .blocks {
+    flex-basis: 75%;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
   }
   .block {
-    flex-basis: 20%;
+    flex-basis: calc(33% - 15px);
+  }
+  .info,
+  .block {
+    margin-bottom: 0;
+  }
+  .info .upper,
+  ul {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  ul {
+    border: #fff solid 5px;
+    gap: 10px;
   }
 }
