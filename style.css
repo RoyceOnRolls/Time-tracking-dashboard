@@ -63,6 +63,8 @@ h3 {
 
 main {
   margin: 30px;
+  max-width: 500px;
+  margin-inline: auto;
 }
 
 .blocks .lower,
@@ -117,10 +119,9 @@ a.active {
   color: #fff;
 }
 
-.block .upper img {
-  position: relative;
-  margin-left: auto;
-  z-index: 1;
+.block .upper {
+  display: relative;
+  height: 80px;
 }
 
 .block .lower {
@@ -134,30 +135,41 @@ a.active {
   cursor: pointer;
 }
 
+.block .upper {
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
 /* Blocks color */
 
 .work .upper {
   background-color: var(--LightOrange);
+  background-image: url(./images/icon-work.svg);
 }
 
 .play .upper {
   background-color: var(--SoftBlue);
+  background-image: url(./images/icon-play.svg);
 }
 
 .study .upper {
   background-color: var(--LightRed);
+  background-image: url(./images/icon-study.svg);
 }
 
 .exercise .upper {
   background-color: var(--LimeGreen);
+  background-image: url(./images/icon-exercise.svg);
 }
 
 .social .upper {
   background-color: var(--Violet);
+  background-image: url(./images/icon-social.svg);
 }
 
 .selfCare .upper {
   background-color: var(--SoftOrange);
+  background-image: url(./images/icon-self-care.svg);
 }
 
 /* Scroll Bar */
@@ -179,4 +191,20 @@ a.active {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--Blue);
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    max-width: 1200px;
+    display: flex;
+    border: #fff solid 5px;
+    justify-content: center;
+    gap: 30px;
+  }
+  .blocks {
+    flex-wrap: wrap;
+  }
+  .block {
+    flex-basis: 20%;
+  }
 }
