@@ -3,11 +3,14 @@ let currentAmount = document.querySelectorAll(".currentAmount");
 let previousAmount = document.querySelectorAll(".previousAmount");
 let period = document.querySelectorAll(".period");
 
-async function getData(period) {
+async function getData() {
   const response = await fetch("./data.json");
   const data = await response.json();
-  //   console.log(data);
-  //   return data;
+  return data;
+}
+
+async function displayData(period) {
+  const data = await getData();
   for (let key in currentAmount) {
     currentAmount[key].innerText = data[key]["timeframes"][period]["current"];
   }
@@ -17,4 +20,4 @@ async function getData(period) {
   }
 }
 
-getData("weekly");
+displayData("weekly");
